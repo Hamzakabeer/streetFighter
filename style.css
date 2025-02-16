@@ -1,0 +1,206 @@
+ body {
+   background-image: url('https://i.imgur.com/3yEmUFm.gif');
+   background-size: cover;
+   height: 100vh;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .character {
+   width: 200px;
+   height: 300px;
+   position: absolute;
+   bottom: 0;
+ }
+
+ #fighter1 {
+   right: 0;
+ }
+
+ #fighter2 {
+   left: 0;
+ }
+
+ img {
+   width: 100%;
+   height: auto;
+ }
+
+ .fighter {
+   background-size: cover;
+ }
+
+ .health-bar {
+   width: 300px;
+   height: 20px;
+   background-color: #ff0000;
+   border: 2px solid #000;
+   border-radius: 10px;
+   overflow: hidden;
+ }
+
+ .health {
+   height: 100%;
+   background-color: #00ff00;
+   width: 100%;
+ }
+
+ .game-title {
+   position: fixed;
+   top: 10px;
+   width: 100%;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+   color: white;
+   text-shadow: 2px 2px 5px black;
+   z-index: 30;
+ }
+
+
+ .ui-container {
+   position: fixed;
+   top: 70px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 20px;
+   z-index: 20;
+ }
+
+
+ .character-selection {
+   position: absolute;
+   top: 120px;
+   left: 0;
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 10;
+ }
+
+ .character-card {
+   width: 100px;
+   height: 150px;
+   border: 2px solid #fff;
+   background-size: cover;
+   cursor: pointer;
+ }
+
+ .timer {
+   font-size: 2rem;
+   color: #fff;
+   font-weight: bold;
+   text-align: center;
+ }
+
+ .countdown {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 3rem;
+   color: #ffffff;
+   font-weight: bold;
+   display: none;
+ }
+
+ .game-over {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 4rem;
+   color: white;
+   font-weight: bold;
+   display: none;
+ }
+
+ .attack-animation {
+   animation: attack 0.3s ease-out;
+ }
+
+ @keyframes attack {
+   0% {
+     transform: translateX(0);
+   }
+
+   50% {
+     transform: translateX(20px);
+   }
+
+   100% {
+     transform: translateX(0);
+   }
+ }
+
+ .selected {
+   border-color: gold;
+ }
+
+ /* Mobile responsiveness */
+ @media (max-width: 768px) {
+   .character {
+     width: 150px;
+     height: 225px;
+   }
+
+   .character-card {
+     width: 80px;
+     height: 120px;
+   }
+
+   .health-bar {
+     width: 200px;
+     height: 15px;
+   }
+
+   .ui-container {
+     padding: 0 20px;
+   }
+
+   .timer {
+     font-size: 1.5rem;
+   }
+
+   .countdown {
+     font-size: 2rem;
+   }
+
+   .game-over {
+     font-size: 3rem;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .character {
+     width: 100px;
+     height: 150px;
+   }
+
+   .character-card {
+     width: 60px;
+     height: 90px;
+   }
+
+   .health-bar {
+     width: 150px;
+     height: 10px;
+   }
+
+   .timer {
+     font-size: 1rem;
+   }
+
+   .countdown {
+     font-size: 1.5rem;
+   }
+
+   .game-over {
+     font-size: 2rem;
+   }
+ }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Fighter Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="game-title">Game of Fighters</div>
+  <div class="ui-container">
+
+  </div>
+  <div class="character-selection">
+
+    <div id="char1" class="character-card" style="background-image: url('fighter1.gif');"
+      onclick="selectCharacter(1, 'fighter1.gif')"></div>
+    <div id="char2" class="character-card" style="background-image: url('fighter2.gif');"
+      onclick="selectCharacter(1, 'fighter2.gif')"></div>
+    <div id="char3" class="character-card" style="background-image: url('fighter3.gif');"
+      onclick="selectCharacter(2, 'fighter3.gif')"></div>
+    <div id="char4" class="character-card" style="background-image: url('fighter4.gif');"
+      onclick="selectCharacter(2, 'fighter4.gif')"></div>
+    <div id="char5" class="character-card" style="background-image: url('fighter5.gif');"
+      onclick="selectCharacter(1, 'fighter5.gif')"></div>
+    <div id="char6" class="character-card" style="background-image: url('fighter6.gif');"
+      onclick="selectCharacter(1, 'fighter6.gif')"></div>
+    <div id="char7" class="character-card" style="background-image: url('fighter7.gif');"
+      onclick="selectCharacter(2, 'fighter7.gif')"></div>
+    <div id="char8" class="character-card" style="background-image: url('fighter8.gif');"
+      onclick="selectCharacter(2, 'fighter8.gif')"></div>
+    <div id="char9" class="character-card" style="background-image: url('fighter9.gif');"
+      onclick="selectCharacter(1, 'fighter9.gif')"></div>
+    <div id="char10" class="character-card" style="background-image: url('fighter10.gif');"
+      onclick="selectCharacter(2, 'fighter10.gif')"></div>
+  </div>
+
+  <div class="ui-container">
+    <div class="health-bar" id="health-bar-1">
+      <div class="health" id="health-1"></div>
+    </div>
+    <div class="timer" id="timer">60</div>
+    <div class="health-bar" id="health-bar-2">
+      <div class="health" id="health-2"></div>
+    </div>
+  </div>
+  <div class="countdown" id="countdown">3</div>
+  <div class="w-full h-screen flex items-center justify-center relative">
+    <div id="fighter1" class="character fighter"
+      style="background-image: url('https://www.fightersgeneration.com/np5/kof12/kyo-12s.gif');"></div>
+    <div id="fighter2" class="character fighter"
+      style="background-image: url('https://www.fightersgeneration.com/np5/char/ssf2hd/ryu-hdstance.gif');"></div>
+    <div id="game-over" class="game-over"></div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
