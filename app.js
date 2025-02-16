@@ -92,6 +92,22 @@ document.addEventListener('keydown', (event) => {
       break;
   }
 });
+document.getElementById('move-left').addEventListener('click', () => {
+  if (gameRunning) moveLeft(fighter1);
+});
+
+document.getElementById('move-right').addEventListener('click', () => {
+  if (gameRunning) moveRight(fighter1);
+});
+
+document.getElementById('jump').addEventListener('click', () => {
+  if (gameRunning) jump(fighter1);
+});
+
+document.getElementById('attack').addEventListener('click', () => {
+  if (gameRunning) attack(fighter1, health2, blocking2);
+}); 
+
 
 document.addEventListener('keyup', (event) => {
   if (event.key === 'Shift') blocking1 = false;

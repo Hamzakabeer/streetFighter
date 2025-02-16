@@ -56,7 +56,23 @@
    text-shadow: 2px 2px 5px black;
    z-index: 30;
  }
+ #mobile-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
 
+#mobile-controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
  .ui-container {
    position: fixed;
