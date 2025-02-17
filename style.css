@@ -7,8 +7,8 @@ body {
 }
 
 .character {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
   position: absolute;
   bottom: 0;
 }
