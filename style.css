@@ -50,9 +50,9 @@ img {
   top: 10px;
   width: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
-  color: white;
+  color: yellow;
   text-shadow: 2px 2px 5px black;
   z-index: 30;
 }
@@ -71,40 +71,42 @@ img {
 
 .character-selection {
   position: absolute;
-  top: 120px;
+  top: 140px;
   left: 0;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  gap: 20px;
+  background-color: rgba(245, 235, 235, 0.7);
   z-index: 10;
 }
 
 .character-card {
   width: 100px;
   height: 150px;
-  border: 2px solid #fff;
+  border: 1px solid white;
+  border-radius: 6px;
   background-size: cover;
   cursor: pointer;
 }
 
 .timer {
-  font-size: 2rem;
-  color: #fff;
+  font-size: 3rem;
+  color: rgb(255, 42, 42);
+  margin-top: 5px;
   font-weight: bold;
   text-align: center;
 }
 
 .countdown {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: #ffffff;
+  font-size: 4rem;
+  color: yellow;
   font-weight: bold;
   display: none;
 }
@@ -115,7 +117,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
-  color: white;
+  color: rgb(116, 250, 38);
   font-weight: bold;
   display: none;
 }

@@ -37,7 +37,7 @@ function startCountdown() {
 }
 
 function startGameTimer() {
-  timerElement.style.color = 'red'; // Set the color to red
+  timerElement.style.color = 'red'; 
   let timeLeft = 60;
   let timer = setInterval(() => {
     timerElement.textContent = timeLeft;
