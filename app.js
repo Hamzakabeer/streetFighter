@@ -155,21 +155,21 @@ function startAI() {
 
 startCountdown();
 document.addEventListener('DOMContentLoaded', function abc() {
-  let magicCutOff; // Declare the variable outside both timeouts
+  let magicCutOff; 
 
-  // First timeout to change background image
+ 
   setTimeout(function() {
-    magicCutOff = document.querySelector(".main-hero"); // Initialize the variable here
-    if (magicCutOff) {  // Check if the element exists
+    magicCutOff = document.querySelector(".main-hero"); 
+    if (magicCutOff) {  
       document.body.style.backgroundImage = 'url("assets/DALL·E 2025-02-17 09.23.19 - A dynamic cover image inspired by a fighting game theme titled \'Kings of Fighter.\' The scene features two fierce warriors in an intense battle stance,.webp")';
     } else {
       console.error("Element with class 'main-hero' not found.");
     }
   }, 3000);
 
-  // Second timeout to display the element
+ 
   setTimeout(function() {
-    if (magicCutOff) { // Ensure magicCutOff is defined
+    if (magicCutOff) { 
       magicCutOff.style.display = "block";
     } else {
       console.error("Cannot display element because it was not found.");
