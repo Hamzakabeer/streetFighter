@@ -1,206 +1,206 @@
- body {
-   background-image: url('assets/bgmain.gif');
-   background-size: cover;
-   height: 100vh;
-   overflow: hidden;
-   position: relative;
- }
+body {
+  background-image: url('assets/bgmain.gif');
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 
- .character {
-   width: 200px;
-   height: 300px;
-   position: absolute;
-   bottom: 0;
- }
+.character {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+}
 
- #fighter1 {
-   right: 0;
- }
+#fighter1 {
+  right: 0;
+}
 
- #fighter2 {
-   left: 0;
- }
+#fighter2 {
+  left: 0;
+}
 
- img {
-   width: 100%;
-   height: auto;
- }
+img {
+  width: 100%;
+  height: auto;
+}
 
- .fighter {
-   background-size: cover;
- }
+.fighter {
+  background-size: cover;
+}
 
- .health-bar {
-   width: 300px;
-   height: 20px;
-   background-color: #ff0000;
-   border: 2px solid #000;
-   border-radius: 10px;
-   overflow: hidden;
- }
+.health-bar {
+  width: 300px;
+  height: 20px;
+  background-color: #ff0000;
+  border: 2px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
- .health {
-   height: 100%;
-   background-color: #00ff00;
-   width: 100%;
- }
+.health {
+  height: 100%;
+  background-color: #00ff00;
+  width: 100%;
+}
 
- .game-title {
-   position: fixed;
-   top: 10px;
-   width: 100%;
-   text-align: center;
-   font-size: 2rem;
-   font-weight: bold;
-   color: white;
-   text-shadow: 2px 2px 5px black;
-   z-index: 30;
- }
-
-
- .ui-container {
-   position: fixed;
-   top: 70px;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   padding: 0 20px;
-   z-index: 20;
- }
+.game-title {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  z-index: 30;
+}
 
 
- .character-selection {
-   position: absolute;
-   top: 120px;
-   left: 0;
-   width: 100%;
-   padding: 10px;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: 10px;
-   background-color: rgba(0, 0, 0, 0.7);
-   z-index: 10;
- }
+.ui-container {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 20;
+}
 
- .character-card {
-   width: 100px;
-   height: 150px;
-   border: 2px solid #fff;
-   background-size: cover;
-   cursor: pointer;
- }
 
- .timer {
-   font-size: 2rem;
-   color: #fff;
-   font-weight: bold;
-   text-align: center;
- }
+.character-selection {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
 
- .countdown {
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 3rem;
-   color: #ffffff;
-   font-weight: bold;
-   display: none;
- }
+.character-card {
+  width: 100px;
+  height: 150px;
+  border: 2px solid #fff;
+  background-size: cover;
+  cursor: pointer;
+}
 
- .game-over {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 4rem;
-   color: white;
-   font-weight: bold;
-   display: none;
- }
+.timer {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
 
- .attack-animation {
-   animation: attack 0.3s ease-out;
- }
+.countdown {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+  display: none;
+}
 
- @keyframes attack {
-   0% {
-     transform: translateX(0);
-   }
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  display: none;
+}
 
-   50% {
-     transform: translateX(20px);
-   }
+.attack-animation {
+  animation: attack 0.3s ease-out;
+}
 
-   100% {
-     transform: translateX(0);
-   }
- }
+@keyframes attack {
+  0% {
+    transform: translateX(0);
+  }
 
- .selected {
-   border-color: gold;
- }
+  50% {
+    transform: translateX(20px);
+  }
 
- /* Mobile responsiveness */
- @media (max-width: 768px) {
-   .character {
-     width: 150px;
-     height: 225px;
-   }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-   .character-card {
-     width: 80px;
-     height: 120px;
-   }
+.selected {
+  border-color: gold;
+}
 
-   .health-bar {
-     width: 200px;
-     height: 15px;
-   }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .character {
+    width: 150px;
+    height: 225px;
+  }
 
-   .ui-container {
-     padding: 0 20px;
-   }
+  .character-card {
+    width: 80px;
+    height: 120px;
+  }
 
-   .timer {
-     font-size: 1.5rem;
-   }
+  .health-bar {
+    width: 200px;
+    height: 15px;
+  }
 
-   .countdown {
-     font-size: 2rem;
-   }
+  .ui-container {
+    padding: 0 20px;
+  }
 
-   .game-over {
-     font-size: 3rem;
-   }
- }
+  .timer {
+    font-size: 1.5rem;
+  }
 
- @media (max-width: 480px) {
-   .character {
-     width: 100px;
-     height: 150px;
-   }
+  .countdown {
+    font-size: 2rem;
+  }
 
-   .character-card {
-     width: 60px;
-     height: 90px;
-   }
+  .game-over {
+    font-size: 3rem;
+  }
+}
 
-   .health-bar {
-     width: 150px;
-     height: 10px;
-   }
+@media (max-width: 480px) {
+  .character {
+    width: 100px;
+    height: 150px;
+  }
 
-   .timer {
-     font-size: 1rem;
-   }
+  .character-card {
+    width: 60px;
+    height: 90px;
+  }
 
-   .countdown {
-     font-size: 1.5rem;
-   }
+  .health-bar {
+    width: 150px;
+    height: 10px;
+  }
 
-   .game-over {
-     font-size: 2rem;
-   }
- }
+  .timer {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    font-size: 1.5rem;
+  }
+
+  .game-over {
+    font-size: 2rem;
+  }
+}

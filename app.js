@@ -161,11 +161,15 @@ document.addEventListener('DOMContentLoaded', function abc() {
   setTimeout(function() {
     magicCutOff = document.querySelector(".main-hero"); 
     if (magicCutOff) {  
-      document.body.style.backgroundImage = 'url("assets/DALL·E 2025-02-17 09.23.19 - A dynamic cover image inspired by a fighting game theme titled \'Kings of Fighter.\' The scene features two fierce warriors in an intense battle stance,.webp")';
+      document.body.style.backgroundImage = 'url("assets/cover.jpg")';
+      document.body.style.backgroundSize = '100% 100%';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundPosition = 'center';
+      magicCutOff.style.display = "block";
     } else {
       console.error("Element with class 'main-hero' not found.");
     }
-  }, 3000);
+  }, 1000);
 
  
   setTimeout(function() {
