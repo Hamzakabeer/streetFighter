@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function abc() {
   setTimeout(function() {
     magicCutOff = document.querySelector(".main-hero"); 
     if (magicCutOff) {  
-      document.body.style.backgroundImage = 'url("assets/cover.jpg")';
+      document.body.style.backgroundImage = 'url("assets/cover.webp")';
       document.body.style.backgroundSize = '100% 100%';
       document.body.style.backgroundRepeat = 'no-repeat';
       document.body.style.backgroundPosition = 'center';
